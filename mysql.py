@@ -1,7 +1,8 @@
 import pydb
-class mysqldb(pydb):
+
+class mysqldb(pydb.pydb):
     def __init__(self):
-        pass
+        print "This is Mysql init"
     def insert(self):
         pass
     def update(self):
@@ -10,3 +11,5 @@ class mysqldb(pydb):
         pass
     def delete(self):
         pass
+    def printdb(self):
+        print "Hello Mysql"
