@@ -8,8 +8,8 @@ class pydb(object):
 
     def __init__(self,db):
         self.db=db
-    def connection(self,ip,port,uname,pwd):
-        return self.db.connection(ip,port,uname,pwd)
+    def connection(self,ip,port,uname,pwd,db_name):
+        return self.db.connection(ip,port,uname,pwd,db_name)
     def insert(self):
         return self.db.insert()
     def update(self):
